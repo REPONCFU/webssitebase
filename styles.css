@@ -1,0 +1,525 @@
+/* Основной стиль */
+body {
+    margin: 0;
+    font-family: 'Oxanium', sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: #fff;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Навигация */
+.nav-links {
+    display: flex; /* Горизонтальное выравнивание */
+    align-items: center; /* Выравнивание по вертикали */
+    gap: 15px; /* Расстояние между элементами */
+    list-style: none; /* Убираем стандартные точки */
+    margin: 0; /* Убираем внешние отступы */
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+/* Ссылки */
+.nav-links a {
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none; /* Убираем подчеркивание */
+    padding: 10px 20px; /* Внутренние отступы */
+    border-radius: 5px; /* Скругленные углы */
+    background: rgba(255, 255, 255, 0.05); /* Полупрозрачный фон */
+    transition: all 0.3s ease; /* Плавная анимация */
+    height: 100%; /* Автоматическая высота */
+    display: flex; /* Делаем ссылку флекс-блоком */
+    align-items: center; /* Центрируем текст внутри ссылки */
+}
+
+/* Эффект наведения */
+.nav-links a:hover {
+    color: #9b59b6;
+    background: rgba(155, 89, 182, 0.2);
+    transform: scale(1.1);
+}
+
+.nav-links {
+    transform: translateX(-100px); /* Сдвигает весь блок кнопок влево */
+}
+
+/* Специальный стиль для кнопки */
+.nav-links .cta {
+    background: rgba(155, 89, 182, 0.5); /* Фиолетовый фон */
+    color: #fff; /* Белый текст */
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(155, 89, 182, 0.8); /* Светящаяся тень */
+    transition: all 0.3s ease; /* Плавная анимация */
+    padding: 10px 25px; /* Равномерные отступы */
+    display: flex; /* Центрирование текста внутри кнопки */
+    align-items: center; /* Вертикальное центрирование */
+}
+
+/* Эффект наведения для кнопки */
+.nav-links .cta:hover {
+    background: rgba(155, 89, 182, 0.8);
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(155, 89, 182, 1);
+}
+
+
+/* Хедер */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgb(34, 27, 43); /* Прозрачный фон */
+    backdrop-filter: blur(10px); /* Размытие */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Логотип */
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #8e44ad, 0 0 20px #9b59b6;
+}
+
+/* Навигация */
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 10;
+    padding: 0;
+}
+
+/* Ссылки в навигации */
+.nav-links a {
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+/* Эффект наведения */
+.nav-links a:hover {
+    background: rgba(155, 89, 182, 0.3);
+    color: #9b59b6;
+    transform: scale(1.1);
+}
+
+/* Последняя кнопка (CTA) */
+.nav-links .cta {
+    background: rgba(155, 89, 182, 0.5);
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(155, 89, 182, 0.8);
+    transition: all 0.3s ease;
+}
+
+/* Подключаем рукописный шрифт (например, Dancing Script) */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.cursive {
+    font-family: 'Dancing Script', cursive; /* Рукописный шрифт */
+    color: #9b59b6; /* Красивый фиолетовый оттенок */
+    font-size: 1.1em; /* Увеличиваем размер для акцента */
+    text-shadow: 0 0 10px rgba(155, 89, 182, 0.5); /* Свечение */
+    display: inline-block; /* Если нужно добавить отдельное выравнивание */
+}
+
+
+.nav-links .cta:hover {
+    background: rgba(155, 89, 182, 0.8);
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(155, 89, 182, 1);
+}
+
+/* Секция Hero */
+.hero {
+    text-align: center;
+    padding: 200px 10px;
+    background: linear-gradient(45deg, #0f0f0f, #1a1a1a);
+    color: #ccc;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #9b59b6;
+    text-shadow: 0 0 15px rgba(155, 89, 182, 0.8);
+    margin-bottom: 10px; /* Уменьшаем нижний отступ заголовка */
+}
+
+.hero p {
+    margin-top: 10px;
+    color: #bbb;
+    font-size: 1.2rem;
+}
+
+/* Секция отзывов */
+.reviews {
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #1a1a1a, #0d0d0d);
+    color: #fff;
+}
+
+/* Текст "Отзывы студентов" */
+.reviews-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#dynamic-title {
+    font-size: 2.5rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #9b59b6;
+    animation: fade-in-out 6s infinite;
+}
+
+/* Анимация текста */
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+
+.reviews h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #9b59b6;
+    margin-bottom: 40px;
+}
+
+/* Контейнер */
+.reviews-container {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Рисунок котика */
+.ascii-cat {
+    font-family: monospace;
+    font-size: 1.5rem;
+    color: #9b59b6;
+    white-space: pre;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+/* Отзывы */
+.review {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(155, 89, 182, 0.5);
+    font-size: 1.2rem;
+    max-width: 60%;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+.review p {
+    margin-bottom: 10px;
+}
+
+.review span {
+    font-size: 0.9rem;
+    color: #9b59b6;
+}
+
+/* GIF поверх блоков */
+.gif-overlay {
+    position: fixed; /* Фиксируем GIF на экране */
+    top: 50%; /* Располагаем GIF по вертикали */
+    left: 20%; /* Регулируем положение по оси X */
+    transform: translate(-50%, -50%); /* Центрируем GIF относительно заданных координат */
+    z-index: 1000; /* Поверх остальных элементов */
+    pointer-events: none; /* GIF не будет блокировать взаимодействие с другими элементами */
+}
+
+footer {
+    text-align: center; /* Центровка текста */
+    padding: 20px; /* Отступы */
+    background: rgba(255, 255, 255, 0.05); /* Легкий фон */
+    color: #fff; /* Цвет текста */
+    position: relative; /* Для дополнительного позиционирования */
+    margin-top: 40px; /* Отступ сверху */
+    display: flex; /* Flexbox для выравнивания */
+    flex-direction: column; /* Элементы располагаются вертикально */
+    align-items: center; /* Центрирование по горизонтали */
+    justify-content: center; /* Центрирование по вертикали */
+}
+
+footer p {
+    margin: 0; /* Убираем отступы */
+    font-size: 1rem; /* Размер текста */
+    line-height: 1.5; /* Межстрочный интервал */
+}
+
+footer a {
+    color: #9b59b6; /* Фиолетовый цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold; /* Жирный текст */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+/* Секция заявки */
+.application-section {
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #1a1a1a, #0d0d0d);
+    color: #fff;
+    text-align: center;
+}
+
+.application-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 20px rgba(155, 89, 182, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Заголовок */
+.application-container h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #9b59b6;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Параграф */
+.application-container p {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Поля формы */
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px #9b59b6;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Кнопка */
+form button {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #9b59b6;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #8e44ad;
+    box-shadow: 0 0 15px rgba(142, 68, 173, 1);
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Анимация появления фона */
+.application-container::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(155, 89, 182, 0.3), transparent 70%);
+    animation: rotateBackground 10s linear infinite;
+    z-index: -1;
+}
+
+@keyframes rotateBackground {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* Форма */
+.application-section {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1100;
+    width: 90%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.application-section h2, .application-section p {
+    text-align: center;
+    color: #fff;
+}
+
+.application-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.application-section form input,
+.application-section form textarea,
+.application-section form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.application-section form button {
+    background: #9b59b6;
+    color: #fff;
+    cursor: pointer;
+}
+
+.application-section form button:hover {
+    background: #8e44ad;
+}
+
+/* Кнопка закрытия */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover {
+    color: #9b59b6;
+}
+
+/* Фидбек */
+.feedback {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(155, 89, 182, 0.9);
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Oxanium', sans-serif;
+    font-size: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1001;
+}
+
+.feedback.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.feedback.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.gif-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    transition: opacity 4s ease; /* Плавное исчезновение за 4 секунд */
+}
+
+.gif-overlay.hidden {
+    opacity: 0; /* Прозрачность 0 для исчезновения */
+}
+
+#content {
+    transition: filter 0.5s ease;
+}

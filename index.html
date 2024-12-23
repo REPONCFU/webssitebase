@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BASΞ Ecampus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Oxanium:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+<header>
+  <div class="logo">
+    BASΞ Ecampus
+  </div>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="about.html" class="button-link">О нас</a></li>
+      <li><a href="courses.html" class="button-link">Курсы</a></li>
+      <li><a href="https://github.com">GitHub</a></li>
+      <li><a href="#reviews">Отзывы</a></li>
+      <li><a href="#application" class="cta" onclick="openApplicationForm(event)">Присоединяйтесь</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section id="hero" class="hero">
+    <h1>Print "HELLO CODE"</h1>
+    <p>BASΞ Ecampus — школа, где код становится <span class="cursive">искусством</span>, а баги превращаются в стиль жизни.</p>
+  </section>
+</main>
+
+<!-- Форма заявки -->
+<section id="application" class="application-section">
+  <button class="close-button" onclick="closeApplicationForm()">×</button>
+  <h2>Оставьте заявку на обучение</h2>
+  <p>Заполните форму ниже, и мы свяжемся с вами в ближайшее время.</p>
+  <form>
+    <label for="name">Ваше имя:</label>
+    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+    <label for="email">Ваш Email:</label>
+    <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+    <label for="message">Сообщение:</label>
+    <textarea id="message" name="message" placeholder="Расскажите немного о себе"></textarea>
+
+    <button type="submit">Отправить заявку</button>
+  </form>
+</section>
+
+<section id="reviews" class="reviews">
+
+  <div class="reviews-container">
+
+    <pre class="ascii-cat">
+       /\_/\
+      ( o.o )
+       > ^ <
+    </pre>
+    <div class="review" data-delay="0">
+      <p>"Теперь я знаю, что добавлять комментарии в код — это роскошь, а не необходимость."</p>
+      <span>— Николай Бейл Гейтс</span>
+    </div>
+    <div class="review" data-delay="1">
+      <p>"После BASΞ я понял, что 90% работы программиста — это гуглить, а 10% — делать вид, что ты знаешь, что делаешь."</p>
+      <span>— Марк О'Цукерберг</span>
+    </div>
+    <div class="review" data-delay="2">
+      <p>"Думал, что научусь программировать. Научился мастерски объяснять, почему 'это не баг'."</p>
+      <span>— Павел ДурОв</span>
+    </div>
+    <div class="review" data-delay="3">
+      <p>"Когда мой код заработал, я заплакал. Но когда объяснил это коллегам — плакали уже все."</p>
+      <span>— Стив Александрович Джобсов</span>
+    </div>
+    <div class="review" data-delay="4">
+      <p>"Каждый мой баг теперь выглядит как дорогая фича. Спасибо, BASΞ!"</p>
+      <span>— Алексей Мяуконин</span>
+    </div>
+  </div>
+
+</section>
+
+<div class="gif-overlay">
+  <img src="src\__3.gif" alt="Fun GIF">
+</div>
+
+
+
+<footer>
+  <p>&copy; 2024 BASΞ Ecampus. Лазеры и котики охраняют ваш код.</p>
+</footer>
+<!-- Фидбек -->
+<div id="feedback" class="feedback hidden">🎉 Спасибо за заявку! Мы свяжемся с вами</div>
+
+</body>
+</html>
