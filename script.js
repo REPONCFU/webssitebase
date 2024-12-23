@@ -53,6 +53,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', handleScroll);
   handleScroll(); // Первоначальная проверка
+});
+document.addEventListener('DOMContentLoaded', () => {
+  const reviews = document.querySelectorAll('.review');
+  const title = document.getElementById('dynamic-title');
+  const phrases = [
+    "Скоро откроется правда об IT.",
+    "Программисты тоже люди, правда немного странные.",
+    "Отзывы, которых вы не ждали.",
+    "BASΞ Ecampus: там, где true становится false.",
+  ];
+  let index = 0;
 
   // Анимация текста
   setInterval(() => {
