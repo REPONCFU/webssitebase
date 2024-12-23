@@ -128,7 +128,7 @@ header {
     transition: all 0.3s ease;
 }
 
-/* Подключаем рукописный шрифт (например, Dancing Script) */
+/* Подключаем прописной шрифт*/
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 .cursive {
