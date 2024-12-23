@@ -89,10 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
   handleScroll(); // Первоначальная проверка
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const formSection = document.querySelector('#application');
-  const blurElements = document.querySelectorAll('header, #hero, footer');
-
 // Открытие формы
   window.openApplicationForm = (event) => {
     event.preventDefault();
